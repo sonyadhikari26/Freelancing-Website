@@ -1,0 +1,126 @@
+.resendVerification {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+
+  .container {
+    width: 100%;
+    max-width: 450px;
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+
+      &.success {
+        text-align: center;
+      }
+
+      .success-icon {
+        font-size: 4rem;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        color: #333;
+        margin-bottom: 15px;
+        font-size: 24px;
+        text-align: center;
+      }
+
+      p {
+        color: #666;
+        margin-bottom: 30px;
+        line-height: 1.6;
+        text-align: center;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+
+        label {
+          display: block;
+          margin-bottom: 8px;
+          color: #333;
+          font-weight: 500;
+        }
+
+        input {
+          width: 100%;
+          padding: 12px;
+          border: 2px solid #e1e1e1;
+          border-radius: 6px;
+          font-size: 16px;
+          transition: border-color 0.3s;
+
+          &:focus {
+            outline: none;
+            border-color: #3498db;
+          }
+        }
+      }
+
+      .button {
+        display: inline-block;
+        width: 100%;
+        padding: 12px 24px;
+        background-color: #3498db;
+        color: white;
+        text-decoration: none;
+        border: none;
+        border-radius: 6px;
+        font-weight: 500;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-bottom: 20px;
+
+        &:hover:not(:disabled) {
+          background-color: #2980b9;
+        }
+
+        &:disabled {
+          background-color: #bdc3c7;
+          cursor: not-allowed;
+        }
+
+        &.secondary {
+          background-color: #95a5a6;
+          width: auto;
+          margin: 10px;
+
+          &:hover {
+            background-color: #7f8c8d;
+          }
+        }
+      }
+
+      .actions {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .links {
+        text-align: center;
+        
+        a {
+          display: block;
+          color: #3498db;
+          text-decoration: none;
+          margin: 5px 0;
+          font-size: 14px;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
